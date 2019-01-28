@@ -32,7 +32,13 @@ for statement in imports:
 print('creating keys..')
 with open('./sql/keys.sql', 'r') as fsql:
     sql = fsql.read()
+cursor.execute(sql)
+conn.commit()
 
+
+print('creating constraints..')
+with open('./sql/constraints.sql', 'r') as fsql:
+    sql = fsql.read()
 cursor.execute(sql)
 conn.commit()
 
