@@ -30,3 +30,6 @@ custom$ cat ./output.csv /path/to/addressbase_cleaned.csv > merged.csv
 # postal addresses of Type D UPRNS from AddressBase Standard and
 # geographic addresses for type C and L UPRNs from AddressBase premium
 ```
+
+Note: Ensure your copies of AddressBase Standard and Premium use the same Epoch
+otherwise you'll get duplicate UPRNs
